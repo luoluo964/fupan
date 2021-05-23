@@ -1,0 +1,55 @@
+body{
+    text-align:center; 
+}
+canvas{
+	position:fixed;/*设置定位*/
+	top:0;
+	left:0;
+	z-index:-1;/*使画布基于最低层*/
+	background:#0e1729;/*画布背景色*/
+}
+
+#loginPanel{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 30%;
+    margin:5% auto;
+
+    padding: 2%;
+
+    opacity: 70%;
+}
+
+.title{
+    font-size: xx-large;
+
+    background-image: -webkit-gradient(linear, 
+    0 0, 0 bottom, 
+    from(rgb(34, 34, 24)), 
+    to(rgb(87, 87, 87)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.sub-button{
+    color: rgb(253, 253, 253);
+
+    width: 30%;
+    height: auto;
+
+    border:1px solid #333;
+    box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;
+    background: -webkit-linear-gradient(top,#656565,#4c4c4c);
+    background: -moz-linear-gradient(top,#656565,#4a4a4a);
+    background: linear-gradient(top,#656565,#4a4a4a);    
+}
+
+
+
+
+
+
+
+
+
+

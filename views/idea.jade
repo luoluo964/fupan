@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet',type='text/css',href='../css/main.css')
+    script(src='../js/manipu.js')
+  body
+    div(class="main-content")
+      div(class="title")
+        h1= title
+      ul 
+        -for(var i=1;i<=idList.length;i++) 
+          li
+            a(href="detail?id="+idList[i-1])= ideaList[i-1]
+            input(type="button",value="删除",name=idList[i-1],class="delBtn")
+      br
+      br
+      br
+      form(action="add",method="POST")
+        input(type="text",name="newidea",value="新的人生经验")
+        input(type="text",name="newdetail",value="经验出处")
+        input(type="submit",value="添加",id="add")
